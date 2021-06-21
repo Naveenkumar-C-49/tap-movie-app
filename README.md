@@ -1,6 +1,6 @@
 # Tap-Movie-App
 
-## MERN Stack Integration
+## PERN Stack Integration
 
 ### List all movies
 ![List all movies](https://github.com/Naveenkumar-C-49/tap-movie-app/blob/main/screenshots/list.png)
