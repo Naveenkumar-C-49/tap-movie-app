@@ -78,9 +78,24 @@ const createMovie = async (req, res) => {
         return res.json({ message: "Movie not added" });
     }
 }
+
+const updateMovie = async (req, res) => {
+    const { movieId } = req.params;
+    if (!req.body) {
+        return res.status(400).json({ message: "Please fill anyone field" });
+    }
+
+    const result = await Movie.update(req.body, { where: { movie_id: movieId } });
+    if (result) {
+        return res.json({ message: "Movie added successfully..." });
+    } else {
+        return res.json({ message: "Movie not added" });
+    }
+}
 module.exports = {
     getAllMovies,
     findByMovieId,
     createMovie,
-    deleteMovie
+    deleteMovie,
+    updateMovie
 }

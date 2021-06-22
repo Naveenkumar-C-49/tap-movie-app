@@ -10,4 +10,6 @@ movieRoutes.get("/:movieId", controller.findByMovieId);
 movieRoutes.post("/create", controller.createMovie);
 movieRoutes.delete("/delete/:movieId", controller.deleteMovie);
 
+movieRoutes.put("/update/:movieId", controller.updateMovie);
+
 module.exports = movieRoutes;

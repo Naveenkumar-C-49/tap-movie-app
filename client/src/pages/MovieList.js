@@ -150,6 +150,7 @@ function MovieList() {
             data: movieObject
         });
         toggle();
+        getMovies();
     }
 
     const createModal = () => (
